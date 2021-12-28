@@ -62,7 +62,7 @@ export default function Write() {
           <ReactQuill
             style={{
               width: '900px',
-              height: '30px'
+              height: '300px'
             }}
             placeholder='Write as you want!'
             theme='snow'
