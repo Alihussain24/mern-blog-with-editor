@@ -74,6 +74,7 @@
   margin-left: 20px;
   font-size: 30px;
   font-weight: 600;
+
 }
 
 .singlePostDescInput {
@@ -81,6 +82,7 @@
   color: #666;
   font-size: 18px;
   line-height: 25px;
+  width: 900px !important;
 }
 
 .singlePostDescInput:focus {
@@ -94,6 +96,7 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  align-self: flex-end;
-  margin-top: 20px;
+  margin-top: 50px;
+  align-self: center;
+
 }

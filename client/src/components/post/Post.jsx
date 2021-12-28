@@ -21,7 +21,7 @@ export default function Post({ post }) {
           {new Date(post.createdAt).toDateString()}
         </span>
       </div>
-    { post.desc ? ReactHtmlParser(post.desc): ''} 
+      <p>{ReactHtmlParser(post.desc)}</p>
     </div>
   );
 }

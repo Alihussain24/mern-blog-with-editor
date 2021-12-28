@@ -1,11 +1,11 @@
-import { useContext, useState } from 'react';
+import { React, useContext, useState } from 'react';
 import './write.css';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import axios from 'axios';
 import { Context } from '../../context/Context';
 
-export default function Write() {
+export default function Write({ rows, cols, value, limit }) {
   const [title, setTitle] = useState('');
   const [desc, setDesc] = useState('');
   const [file, setFile] = useState(null);
@@ -72,9 +72,10 @@ export default function Write() {
             //  formats={formats}>
           />
         </div>
-        <button className='writeSubmit' type='submit'>
+        <button className='writeSubmit custom-btn btn-15' type='submit'>
           Publish
         </button>
+        
       </form>
     </div>
   );
