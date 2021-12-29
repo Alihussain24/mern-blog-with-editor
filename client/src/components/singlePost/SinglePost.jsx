@@ -12,7 +12,7 @@ export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split('/')[2];
   const [post, setPost] = useState({});
-  const PF = 'http://localhost:5000/images/';
+  const PF = 'http://localhost:5000/upload/';
   const { user } = useContext(Context);
   const [title, setTitle] = useState('');
   const [desc, setDesc] = useState('');
@@ -99,7 +99,7 @@ export default function SinglePost() {
             placeholder='Write as you want!'
             theme='snow'
             value={desc}
-            onChange={setDesc} maxLength="140"
+            onChange={setDesc}
           />
         ) : (
           <p className='singlePostDesc'>{ReactHtmlParser(desc)}</p>
