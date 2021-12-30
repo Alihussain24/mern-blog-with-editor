@@ -1,6 +1,7 @@
 .post {
   width: 385px;
-  margin: 0px 25px 40px 25px;
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.609);
 }
 
 .postImg {
@@ -13,7 +14,7 @@
 .postInfo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 }
 
 .postCat {
@@ -32,6 +33,7 @@
   font-weight: 700;
   margin-top: 15px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .postDate {
@@ -45,13 +47,38 @@
 .postDesc {
   font-family: "Varela Round", sans-serif;
   font-size: 14px;
-  color: #444;
+  color: rgb(10, 10, 10);
   line-height: 24px;
   margin-top: 15px;
-
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+.hdzqtu {
+  max-height: 66px;
+  overflow: hidden;
+ background-color: black;
+  transition: all 0.1s;
+  line-height: 22px;
+  margin: 10px;
+}
+
+.readmore p.hdzqtu {
+
+  color: rgba(0, 0, 0, 0.829);
+  background-image: linear-gradient(to top,#383636,#25232363);
+}
+.readmore .sc-dkPtRN{
+  background-color: rgba(206, 173, 211, 0.466) !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 8px !important;
+}
+.readmore .cOzsBB{
+  background-color: rgba(221, 0, 255, 0.287) !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 8px !important;
 }

@@ -1,27 +1,50 @@
-export default function About() {
+import React from 'react';
+import './about.css';
+import Aword from '../../img/award.png';
+import AboutImg from '../../img/aboutimg.jpg'
+const About = () => {
   return (
     <div className='about'>
-      <form id='contact-form' method='POST'>
-        <div className='form-group'>
-          <label htmlFor='name'>Name</label>
-          <input type='text' className='form-control' />
-        </div>
-        <div className='form-group'>
-          <label htmlFor='exampleInputEmail1'>Email address</label>
-          <input
-            type='email'
-            className='form-control'
-            aria-describedby='emailHelp'
+      <div className='about-left'>
+        <div className='aboutCard bg'> </div>
+        <div className='aboutCard'>
+          <img
+            src={AboutImg}
+            alt=''
+            className='aboutimg'
           />
         </div>
-        <div className='form-group'>
-          <label htmlFor='message'>Message</label>
-          <textarea className='form-control' rows='5'></textarea>
+      </div>
+
+      <div className='about-right'>
+        <h2 className='about_me'>About me</h2>
+
+        <p className='pra'>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora amet
+          tempore, aliquid officiis accusamus exercitationem natus et
+          recusandae? Exercitationem maxime quisquam debitis repudiandae dolorum
+          delectus nemo assumenda pariatur voluptates velit?
+        </p>
+
+        <p className='pra'>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum,
+          sed, fugit aperiam necessitatibus ad ducimus voluptate blanditiis
+          suscipit velit, quod labore voluptatum atque nobis! Nihil rem eius
+          odit sit eum.
+        </p>
+
+        <div className='about_award'>
+          <img src={Aword} alt='' className='about_aword_img' />
+          <div className='about_award_text'>
+            <h4 className='about_award_title'>International Designer</h4>
+            <p className='about_aword_text'>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-        <button type='submit' className='btn btn-primary'>
-          Submit
-        </button>
-      </form>
+      </div>
     </div>
   );
-}
+};
+
+export default About;

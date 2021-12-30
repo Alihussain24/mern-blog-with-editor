@@ -50,26 +50,26 @@ const modules = {
   'emoji-textarea': false,
   'emoji-shortname': true,
   imageResize: {
-    // parchment: Quill.import('parchment'),
+     parchment: Quill.import('parchment'),
     modules: ['Resize', 'DisplaySize']
   }
 };
 
-const formats = [
-  'header',
-  'bold',
-  'italic',
-  'underline',
-  'strike',
-  'blockquote',
-  'list',
-  'bullet',
-  'indent',
-  'link',
-  'image',
-  'emoji',
-  'imageBlot' // #5 Optinal if using custom formats
-];
+// const formats = [
+//   'header',
+//   'bold',
+//   'italic',
+//   'underline',
+//   'strike',
+//   'blockquote',
+//   'list',
+//   'bullet',
+//   'indent',
+//   'link',
+//   'image',
+//   'emoji',
+//   'imageBlot' // #5 Optinal if using custom formats
+// ];
 
 export default function Write() {
   const [title, setTitle] = useState('');
@@ -127,7 +127,7 @@ export default function Write() {
           </div>
           <div className='writeFormGroup'>
             <ReactQuill
-             
+              style={{ width: '900px', height: '330px' }}
               placeholder='Write as you want!'
               theme='snow'
               value={desc}

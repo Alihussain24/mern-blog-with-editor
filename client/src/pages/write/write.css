@@ -48,7 +48,7 @@
   font-size: 20px;
   height: 100vh;
 }
-
+/* 
 .writeSubmit {
   position: absolute;
   top: 20px;
@@ -60,7 +60,30 @@
   border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
+} */
+.writeSubmit{
+  position: absolute;
+  top: 30px; 
+  font-size: 16px;
+  cursor: pointer;
+  right: 178px;
+  border: none;
+  padding: 10px;
+   background-color:#f622af;
+    color: white;
+    border-radius: 10px 0px 10px 0px;
+
 }
+.writeSubmit:hover{
+  background-color: rgb(70, 67, 67);
+  color:#fffafd;
+transition: 1s ease-out;
+border-radius: 0px 10px 0px 10px;
+
+}
+
+
+
 
 /* button {
   right: -550px;
@@ -114,3 +137,15 @@
 .btn-15:active {
   top: 2px;
 } */
+
+/* editor css */
+
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 10px;
+  background: #fd00ff24;
+  
+}

@@ -1,0 +1,99 @@
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.about_me{
+  font-size: 30px;
+  color: #f622af;
+}
+.about-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+.about-right {
+  flex: 1;
+}
+
+.aboutCard {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.aboutCard.bg {
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  background-color: #f622af93;
+}
+.aboutimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-right .pra {
+  padding: 10px 50px 0px 0px;
+  text-align: justify;
+}
+
+.about_aword_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+.about_award {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about_award_text {
+  width: 75%;
+}
+.about_award_title {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+  color:#f622af ;
+  
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .about{
+    flex-direction:column;
+    text-align: center;
+   
+margin-top: 50px;
+  }
+  .about-left{
+    width: 100%;
+  }
+  .aboutCard {
+    width: 70%;
+    height: 40vh;
+    margin-top: 40px;
+
+  }
+  .aboutCard.bg {
+  
+    height: 50vh;
+margin: -50px;
+    margin-bottom: 140px;
+  }
+  .about_me {
+    
+    margin-top: 50px;
+}
+.about-right .pra {
+  padding: 10px 26px 0px 23px;
+
+}
+  }

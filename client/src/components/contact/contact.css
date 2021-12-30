@@ -1,0 +1,125 @@
+.contact {
+  height: 100vh;
+  position: relative;
+}
+
+.contact-bg {
+  width: 20px;
+  height: 100%;
+  background-color:#f622af ;
+  position: absolute;
+}
+.contact-wrapper {
+  padding: 50px;
+  display: flex;
+}
+.contact-left {
+  flex: 1;
+}
+.contact-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactTitle {
+  font-size: 30px;
+  width: 80%;
+  color:#f622af;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+}
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.conatct-desc {
+  font-weight: 300;
+}
+
+form {
+  margin-top: 30px;
+}
+.contactInput {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #f622af;;
+  margin: 10px 0px;
+  font-size: 15px;
+  padding-left: 10px;
+
+}
+textarea{
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 15px;
+  padding-left: 10px;
+  border: 1px solid #f622af;
+}
+
+button{
+    border: none;
+    padding: 10px;
+     background-color:#f622af;
+      color: white;
+      border-radius: 10px 0px 10px 0px;
+
+}
+button:hover{
+    background-color: rgb(70, 67, 67);
+    color:#fffafd;
+transition: 1s ease-out;
+border-radius: 0px 10px 0px 10px;
+
+}
+
+p.mag{
+    background: mediumspringgreen;
+    font-size: 13px;
+    color: purple;
+    width: 100px;
+    padding: 4px;
+    border-radius: 10px 0px 10px 0px;
+
+    
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .contact-wrapper{
+    flex-direction:column;
+    padding: 0px 50px;
+  }
+  .contactTitle {
+    font-size: 30px;
+    width: 100%;
+ 
+}
+.contact-bg {
+  width: 12%;
+  height: 40%;
+  background-color: #f622af;
+  position: absolute;
+  overflow: hidden;
+}
+form {
+  margin-top: 30px;
+  margin-left: 12px;
+}
+textarea {
+  width: 89%;
+  
+}
+.contact-info-item {
+  margin: 25px 6px 18px -4px;
+  font-size: 14px;
+}
+  }
