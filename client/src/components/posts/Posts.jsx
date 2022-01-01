@@ -1,8 +1,11 @@
 import Post from '../post/Post';
 import './posts.css';
 import { useState } from 'react';
+import Paginate from 'react-paginate'
+
 export default function Posts({ posts }) {
   const [filter, setFilter] = useState('');
+
   const searchHandle = e => {
     setFilter(e.target.value);
   };
@@ -17,10 +20,7 @@ export default function Posts({ posts }) {
   });
   return (
     <>
-      <div className='posts'>
-        {dataSearch?.map((p, ind) => (
-          <Post post={p} key={ind} />
-        ))}
+      <div>
         <div className='searchDiv'>
           <input
             className='Searchbox'
@@ -30,6 +30,18 @@ export default function Posts({ posts }) {
             onChange={searchHandle.bind(this)}
           />
         </div>
+        <div className='posts'>
+          {dataSearch?.map((p, ind) => (
+            <Post post={p} key={ind} />
+          ))}
+
+        </div>
+
+     <Paginate
+     PreviousPage
+     NextPage
+     
+     />
       </div>
     </>
   );

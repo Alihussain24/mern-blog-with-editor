@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "emailjs": "^3.7.0",
-    "emailjs-com": "^3.2.0",
-    "react-read-more-read-less": "^1.0.7"
-  }
-}
